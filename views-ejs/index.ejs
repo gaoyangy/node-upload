@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>EJS Welcome to <%= title %></p>
+    <p><%= filename %></p>
+    <form action="/upload/files" method="post" enctype="multipart/form-data">  
+      <input type="file" name="file"/>  
+      <input type="submit" value="ok"/>  
+  </form>  
+  </body>
+</html>
